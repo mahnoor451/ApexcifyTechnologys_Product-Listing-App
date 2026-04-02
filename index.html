@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="top_header">
+      
+      <div class="logo-div">
+        <a href="#"><img src="white-logo-removebg-preview.png" alt="" /></a>
+      </div>
+
+      <div class="location_box">
+        <div class="location_box_icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="location_box_spans">
+          <span class="location_box_span1">Deliver to</span>
+          <span class="location_box_span2">Pakistan</span>
+        </div>
+      </div>
+      <div class="search_box">
+        <button onclick="filterProducts('all')" id="all-button">All</button>
+        <input type="text" id="search" placeholder="Search products..." />
+        <section id="filters">
+          <button onclick="filterProducts('shoes')" id="shoes">Shoes</button>
+          <button onclick="filterProducts('clothes')" id="clothes">
+            Clothes
+          </button>
+          <button onclick="filterProducts('electronics')" id="electronics">
+            Electronics
+          </button>
+        </section>
+      </div>
+      <div class="language">
+        <div class="language_img">
+          <img src="US-flag.png" alt="" />
+          <span class="language_span">EN</span>
+        </div>
+        <div class="language_icon">
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+
+      <div class="sign-in-account-wrapper">
+      <div class="sign_in_account">
+        <p><span class="one">Hello, sign in</span></p>
+        <p><span class="two">Account & Lists</span></p>
+      </div>
+
+    <div class="sign-in-modal">
+      <button class="sign-in-button"><a href="contact.html">Sign in</a></button>
+        <p>New customer?<a href="contact.html" id="start-here">Start here</a></p>
+    </div>
+
+      </div>
+
+      <div class="cart">
+        <span class="one"><i class="fa-solid fa-cart-arrow-down"></i></span>
+        <span class="two">Cart</span>
+      </div>
+    </header>
+
+    <div class="image-container">
+      <div class="images">
+        <img src="c-d-x-PDX_a_82obo-unsplash.jpg" alt="" />
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1400&auto=format" alt="" />
+        <img src="shoes.jpg" alt="">
+        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=1400&auto=format" alt="">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=500&auto=format" alt="">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1400&auto=format" alt="">
+        <img src="oppo-c7ctGgRgAYo-unsplash.jpg" alt="">
+        <img src="mediamodifier-7cERndkOyDw-unsplash.jpg" alt="">
+        <img src="marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
+        <img src="fujiphilm-ojZ4wJNUM5w-unsplash.jpg" alt="">
+        <img src="iliya-jokic-ru9e7pKWlg0-unsplash.jpg" alt="">
+        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&auto=format" alt="">
+        <img src="electronics.jpg" alt="">
+      </div>
+      <i class="fa-solid fa-angles-left btn prev"></i>
+      <i class="fa-solid fa-angles-right btn next"></i>
+    </div>
+
+    <div class="container"></div>
+
+    <section id="products"></section>
+
+    <div class="sign-in-container">
+      <div class="sign-in-inside-container">
+        <h3>See personalized recommendations</h3>
+        <button class="sign-in-button"><a href="contact.html" target="_blank">Sign in</a></button>
+        <p>New customer?<a href="contact.html" id="start-here" target="_blank">Start here</a></p>
+      </div>
+    </div>
+
+    <p class="back-to-top"><a href="#">Back to top</a></p>
+
+    <div class="footer">
+      <span class="footer-block span_one">
+      <a href="#">Condition of Use</a>
+      <a href="#">Privacy Notice</a>
+      <a href="#">Consumer Health Data Privacy Disclosure</a>
+      <a href="#">Your Ads Privacy Choices</a>
+      </span>
+      <span class="footer-block span_two">
+      <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+      </span>
+    </div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
